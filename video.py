@@ -77,7 +77,7 @@ def process_img(img):
         heat = add_heat(heat, avg_boxes)
 
         # filter out false positives
-        thresh_heat = apply_threshold(heat, 22)
+        thresh_heat = apply_threshold(heat, 20)
 
         # visualize the heatmap when displaying
         heatmap = np.clip(thresh_heat, 0, 255)
@@ -104,6 +104,7 @@ input_video = 'project_video.mp4'
 recent_boxes = []
 
 clip1 = VideoFileClip(input_video)
-clip1 = clip1.subclip(38,44)
+# clip1 = clip1.subclip(38,42)
+# clip1 = clip1.subclip(19,23)
 video_clip = clip1.fl_image(process_img)
 video_clip.write_videofile(output_video, audio = False)

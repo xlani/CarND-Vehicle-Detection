@@ -1,9 +1,4 @@
-## Writeup Template
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
-
-**Vehicle Detection Project**
+###Vehicle Detection Project**
 
 The goals / steps of this project are the following:
 
@@ -15,8 +10,8 @@ The goals / steps of this project are the following:
 * Estimate a bounding box for vehicles detected.
 
 [//]: # (Image References)
-[image1]: ./classifier_data/vehicles/KITTI_extracted/101.png
-[image2]: ./classifier_data/non_vehicles/GTI/image139.png
+[image1]: ./examples/car_not_car.png
+[image2]:
 [image3]: ./test_images/test1.jpg
 [image4]: ./output_images/test1_windows.jpg
 [image5]: ./output_images/test1_cars_found.jpg
@@ -44,7 +39,6 @@ The code for this step is contained in in lines 41 through 61 of the file called
 I read in all the `vehicle` and `non-vehicle` images.  Here is an example of one of each of the `vehicle` and `non-vehicle` classes:
 
 ![alt text][image1]
-![][image2]
 
 #### 2. Explain how you settled on your final choice of HOG parameters.
 
